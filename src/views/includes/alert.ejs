@@ -1,0 +1,19 @@
+<% if (errors && errors.length > 0) { %>
+    <div class="alert alert-danger">
+        <% errors.forEach(function(error) { %>
+            <%= error %><br>
+        <% }) %>
+    </div>
+<% } %>
+
+<% if (success && success.length > 0) { %>
+    <div class="alert alert-success">
+        <%= success %>
+    </div>
+<% } %>
+
+<% if (info && info.length > 0) { %>
+    <div class="alert alert-info">
+        <%= info %>
+    </div>
+<% } %>
